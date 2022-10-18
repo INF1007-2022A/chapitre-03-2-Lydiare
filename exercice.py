@@ -29,31 +29,42 @@ def average(values):
 
 	pass # La variable v contient une valeur de la liste.
 
-# def bills(value):
-# 	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
-# 	while value != 0:
-# 		if value >= 20:
-# 			pass
-# 		elif value >= 10:
-# 			pass
-# 		elif value >= 5:
-# 			pass
-# 		elif value >= 1:
-# 			pass
-#
-# 	return (twenties, tens, fives, twos, ones);
-#
-# def format_base(value, base, digit_letters):
-# 	# Formater un nombre dans une base donné en utilisant les lettres fournies pour les chiffres<
-# 	# `digits_letters[0]` Nous donne la lettre pour le chiffre 0, ainsi de suite.
-# 	result = ""
-# 	abs_value = abs(value)
-# 	while abs_value != 0:
-# 		pass
-# 	if value < 0:
-# 		# TODO: Ne pas oublier d'ajouter '-' devant pour les nombres négatifs.
-# 		pass
-# 	return result
+def bills(value):
+	# TODO: Calculez le nombre de billets de 20$, 10$ et 5$ et pièces de 1$ à remettre pour représenter la valeur.
+	twenties = tens = fives = ones = 0
+
+	while value != 0:
+		if value >= 20:
+			twenties = value // 20
+			value = value % 20
+			pass
+		elif value >= 10:
+			tens = value // 10
+			value = value % 10
+			pass
+		elif value >= 5:
+			fives = value // 5
+			value = value % 5
+			pass
+		elif value >= 1:
+			ones = value // 1
+			value = value % 1
+			pass
+
+	return (twenties, tens, fives, ones);
+
+def format_base(value, base, digit_letters):
+	# Formater un nombre dans une base donné en utilisant les lettres fournies pour les chiffres<
+	# `digits_letters[0]` Nous donne la lettre pour le chiffre 0, ainsi de suite.
+	result = ""
+	abs_value = abs(value)
+	while abs_value != 0:
+		digit_letters[i] = base
+		pass
+	if value < 0:
+		# TODO: Ne pas oublier d'ajouter '-' devant pour les nombres négatifs.
+		pass
+	return result
 
 
 if __name__ == "__main__":
